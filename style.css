@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'open-sans', sans-serif;
+}
+
+
+/*---- navbar mobile ----*/
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 1em;
+    padding: 0;
+
+}
+
+li {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+}
+
+.navlinks {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+
+.navlinks a {
+    color: aliceblue;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    display: block;
+    float: left;
+    transition: .3s;
+}
+
+.navlinks a:hover {
+    color: #24B351;
+}
+
+
+#hamburgerlinks {
+    display: none;
+}
+
+
+#hamburger {
+    background-color: coral;
+    border: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    padding: 1em;
+    font-size: 1em;
+    margin 0 0 0 0;
+    transition: .3s;
+
+}
+
+#hamburger:hover {
+    background-color: #24B351;
+}
+
+/*---- navbar desktop ----*/
+@media all and (min-width: 700px) {
+
+
+
+    #hamburger {
+        display: none;
+    }
+
+    #hamburgerlinks {
+        display: flex;
+        border: none;
+
+    }
+}
+
+/*---header mobile----*/
+
+
+.home {
+    background-image: url(images/header.jpeg);
+
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    padding: 0;
+
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: 'open-sans', sans-serif;
+    text-align: center;
+    padding: 3em 1em 3em;
+    text-shadow: 1px 1px 10px #000, 1px 1px 10px #000;
+    color: white;
+    margin: 0;
+
+}
+
+/* -------- header tablet --------*/
+
+@media all and (min-width: 700px) {
+    header {
+        height: 60vh;
+    }
+
+    header h1 {
+        padding: 5.5em 0 5.5em 0;
+    }
+}
+
+/*-------- header desktop -------*/
+@media all and (min-width: 1100px) {
+    header {
+        height: 60vh;
+    }
+
+    header h1 {
+        font-size: 3em;
+        padding: 3.5em 0 3.5em 0;
+    }
+}
+
+/*------ body mobile ------- */
+
+
+
+.filterbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 0 3em 0;
+    font-size: 1em;
+    padding: 0;
+    background-color: lightgray;
+
+
+}
+
+.filterbar button {
+    border: none;
+    text-align: center;
+    color: #111;
+    padding: 1em;
+    font-size: 1em;
+    margin: 0.5em;
+    right: 0.5em;
+    background-color: #fff;
+    transition: .3s;
+
+}
+
+.filterbar button:hover {
+    background-color: #24B351;
+}
+
+.filterbar input[type=text] {
+    border: none;
+    text-align: left;
+    color: #111;
+    padding: 0.5em;
+    font-size: 1em;
+    margin: 1em;
+    right: 0.5em;
+    background-color: white;
+}
+
+.filterbar h2 {
+    flex-grow: 1;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
+    grid-gap: 3em;
+    column-gap: 3em;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 0 6em 0;
+}
+
+
+.container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+    padding-bottom: 1em;
+    background-color: #333;
+    border: 1px solid #d2d2d2;
+    transition: .3s;
+}
+
+.container article:hover {
+    transform: translateY(-2%);
+}
+
+.container article h3,
+p {
+    padding: 0 1em 0 1em;
+
+}
+
+.container article a {
+    text-decoration: none;
+}
+
+.container article h3 {
+    color: #efefef;
+
+
+}
+
+.container article p {
+    color: lightgray;
+}
+
+.container article img {
+    width: 24em;
+    height: 17em;
+    margin: auto;
+
+}
+
+
+
+/* ------ body desktop ------*/
+@media all and (min-width: 700px) {
+
+    .container {
+        padding-left: 4em;
+        padding-right: 5em;
+    }
+}
+
+/* ------- body kleine mobiel ---- */
+
+@media all and (max-width: 506px) {
+
+    .filterbar h2 {
+        font-size: 1.2em;
+    }
+}
+
+/* ------------------- detail pagina ----------------*/
+
+
+/*---header detail pagina ----*/
+
+
+.detail {
+    background-image: url(images/hotdogs.jpg);
+
+}
+
+/*------detail pagina main mobile----*/
+
+.omschrijving {
+    text-align: center;
+    margin: auto;
+
+}
+
+#boekenbtn, #verstuurbtn {
+    background-color: coral;
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    margin: 2em 0 2em 0;
+    transition: .3s;
+
+}
+
+#boekenbtn:hover, #verstuurbtn:hover {
+    background-color: #24B351;
+}
+
+#hiddenform{
+    display:none;
+}
+
+.omschrijving form{
+    display: flex;
+    flex-direction:column;
+    text-align: left;
+    margin:0 3em 0 3em;
+}
+
+.omschrijving input[type=text]{
+    margin:0 0 1em 0;
+}
+
+#bedankt{
+    display:none;
+    padding:0 0 3em 0;
+}
+
+/* ------ detail pagina main desktop tablet ------*/
+@media all and (min-width: 700px) {
+
+    .omschrijving {
+        width: 60%;
+        padding: 2em 0 3em 0;
+    }
+}
+
+
+
+
+
+/*----footer-----*/
+
+footer {
+    background-color: #333333;
+    color: #d2d2d2;
+    text-align: center;
+    padding: 3em;
+    margin: 0;
+    height: 10em;
+    font-size: 0.7em;
+}
